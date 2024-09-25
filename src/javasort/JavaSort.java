@@ -28,12 +28,22 @@ public class JavaSort {
                 p1.getDataNascimento().compareTo(p2.getDataNascimento());
         
         System.out.println("-----------------");
-        BubbleSort<Pessoa> bsort = new BubbleSort<>();
+        
+        /*BubbleSort<Pessoa> bsort = new BubbleSort<>();
         bsort.sort(vetorPessoas, comparaNome);
         
         for(Pessoa p : vetorPessoas){
             System.out.println(p);
         }
+        */
+        
+        SelectionSort<Pessoa> ssort = new SelectionSort<>();
+        ssort.sort(vetorPessoas, comparaNome);
+        
+        for(Pessoa p : vetorPessoas){
+            System.out.println(p);
+        }
+        
     }
     
 }
